@@ -4,9 +4,9 @@ from my_user import views
 
 urlpatterns = [
     path('', views.index, name='homepage'),
-    path('signup/', views.signup_view),
-    path('login/', views.loginview),
-    path('logged_out/', views.logged_outview),
+    path('signup/', views.signup_view, name='signup'),
+    path('login/', views.loginview, name='login'),
+    path('logged_out/', views.logged_outview, name='logged_out'),
 
 
 

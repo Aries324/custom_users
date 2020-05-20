@@ -5,7 +5,7 @@ from my_user.forms import LoginForm, MakeUser
 from custom_user import settings
 
 # Create your views here.
-@login_required()
+@login_required
 def index(request):
     auth_value = settings.AUTH_USER_MODEL
     return render(request, 'index.html', {'auth_value':auth_value})
